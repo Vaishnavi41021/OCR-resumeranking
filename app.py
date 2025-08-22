@@ -51,7 +51,7 @@ def set_background(image_file):
     st.markdown(background_css, unsafe_allow_html=True)
 
 # Set background image
-image_path = r"C:\Users\Admin\Pictures\resume ranking\backgroundAicte.png"
+image_path = r"https://raw.githubusercontent.com/Vaishnavi41021/OCR-resumeranking/main/backgroundAicte.png"
 set_background(image_path)
 
 # ✅ Extract text with OCR fallback
@@ -176,3 +176,4 @@ if st.button("Rank Resumes"):
             st.download_button("Download Top 5 Results", data=csv, file_name="top5_resumes.csv", mime="text/csv")
     else:
         st.warning("Please upload valid resumes (<=10MB, <=2 pages) and enter a job description.")
+
